@@ -67,7 +67,7 @@ app.Run();
 
 static void Prepare(IConfiguration configuration)
 {
-    Console.WriteLine("Test");
+    int testVar = 0;
     var connectionString = configuration.GetConnectionString("Database");
     using var connection = new NpgsqlConnection(connectionString);
 
